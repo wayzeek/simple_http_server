@@ -109,7 +109,7 @@ This will start the server at `http://127.0.0.1:8000`.
 - **Example `curl` request:**
   ```bash
   curl -X POST "http://127.0.0.1:8000/locode"   -H "Content-Type: application/json"   -d '{
-    "locode": "CAMTR"
+    "locode": "CA MTR"
   }'
   ```
 
