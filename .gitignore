@@ -1,0 +1,46 @@
+## Template Gitignore file while working with a Python environment
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+.env/
+
+# FastAPI specific
+instance/
+*.db
+*.sqlite3
+
+# Pytest cache files
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+
+# IDE specific (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# MacOS specific files
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+
+# Pydantic compiled schema cache
+*.json_schema_cache
