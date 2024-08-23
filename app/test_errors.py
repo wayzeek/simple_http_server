@@ -52,13 +52,14 @@ async def test_geocode_address_with_special_characters():
 
 @pytest.mark.asyncio
 async def test_geocode_empty_address():
+    # Test with an empty address which should trigger validation and return 422
     response = await fetch("POST", "/geocode", json={
         "city": "",
         "state": "",
         "zip": "",
         "country": ""
     })
-    assert response.status_code == 500 # Expecting 500 since the API does not return 404
+    assert response.status_code == 422
 
 @pytest.mark.asyncio
 async def test_geocode_invalid_locode():
@@ -70,11 +71,11 @@ async def test_geocode_invalid_locode():
 
 @pytest.mark.asyncio
 async def test_geocode_no_locode_provided():
-    # Test with an empty locode which should trigger validation and return 404
+    # Test with an empty locode which should trigger validation and return 422
     response = await fetch("POST", "/locode", json={
         "locode": ""
     })
-    assert response.status_code == 404
+    assert response.status_code == 422
 
 @pytest.mark.asyncio
 async def test_geocode_valid_locode():
