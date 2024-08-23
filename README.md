@@ -18,8 +18,8 @@ This project is a FastAPI-based application that provides endpoints for geocodin
 1. **Clone the repository:**
 
    ```bash
-   git clone <your-repo-url>
-   cd <your-repo-folder>
+   git clone https://github.com/wayzeek/simple_http_server.git
+   cd simple_http_server/
    ```
 
 2. **Create and activate a virtual environment:**
