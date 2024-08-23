@@ -118,7 +118,7 @@ This will start the server at `http://127.0.0.1:8000`.
 To run the tests, including the ones that check the API endpoints for various scenarios, use the following command:
 
 ```bash
-pytest app/test_geocode.py
+pytest app/test_errors.py
 ```
 
 Make sure the server is running before executing the tests.
